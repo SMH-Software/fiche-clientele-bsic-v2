@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+/*:root {
+    --primary: #15616D;
+    --secondary: #001524;
+    --default: #ffffff;
+        --primary: #083D77;
+}*/
+:root {
+    --primary: #0060b7;
+    --secondary: #1a1d20;
+    --default: #FFFFFF;
+}
+
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(var(--primary), var(--secondary));
+    color: var(--default);
+
+}
+
+.container-box h1 {
+    font-size: 3em;
+    font-family: 'Abril Fatface', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+   /*  background: -webkit-linear-gradient(var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    
+}
+.container-box .text{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.box-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 100px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 350px;
+    padding: 60px;
+    border-radius: 6px;
+    background-color: var(--default);
+    transition: .5s all linear;
+    
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px var(--default);
+}
+
+.box img {
+    width: 100px;
+}
+
+.box p {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--secondary);
+}
